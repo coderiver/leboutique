@@ -1,0 +1,14 @@
+@import "lib/base";
+@import "lib/animations";
+@import "lib/keyframes";
+//variables
+$red: #d20000;
+// gradients for ie
+$experimental-support-for-svg: true;
+// global sprites
+$icons: sprite-map("icons/*.png", $spacing: 10px);
+//extend
+%block {
+	
+}
+		
