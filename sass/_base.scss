@@ -2,7 +2,10 @@
 @import "lib/animations";
 @import "lib/keyframes";
 //variables
-$red: #d20000;
+$blue: #006699;
+$red: #e41f32;
+$gray: #333;
+$visit: #663366;
 // gradients for ie
 $experimental-support-for-svg: true;
 // global sprites
@@ -11,4 +14,4 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
 %block {
 	
 }
-		
+	

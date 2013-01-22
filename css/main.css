@@ -1,0 +1,48 @@
+.banner { height: 125px; margin-bottom: 10px; background: #808080; }
+
+.soon { margin-bottom: 30px; background: #fff; border-bottom: 1px solid #ddd; }
+
+.soon__title { padding: 18px 20px 10px 20px; }
+
+.soon__list { padding: 0 10px; overflow: hidden; }
+.soon__list ul { position: relative; bottom: -10px; overflow: hidden; }
+.soon__list li { float: left; width: 16.66%; padding: 8px 10px; box-sizing: border-box; }
+
+.soon__desc { border-bottom: 1px solid #ddd; }
+.soon__desc a { font-size: 14px; font-weight: bold; }
+.soon__desc a:hover { color: #e41f32; }
+.soon__desc a:visited { color: #663366; }
+.soon__desc p { height: 36px; padding: 5px 0 16px 0; }
+
+.about { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #ddd; }
+.about .h2 { padding: 0 0 10px 20px; }
+
+.about__list { padding: 0 10px; overflow: hidden; }
+.about__list li { float: left; width: 16.66%; padding: 8px 10px; box-sizing: border-box; }
+
+.about__price, .about__prod, .about__return, .about__help, .about__info, .about__conf { position: relative; padding-left: 56px; }
+.about__price i, .about__prod i, .about__return i, .about__help i, .about__info i, .about__conf i { position: absolute; top: 9px; left: 0; }
+.about__price strong, .about__prod strong, .about__return strong, .about__help strong, .about__info strong, .about__conf strong { display: block; margin-bottom: 5px; font-size: 14px; }
+.about__price p, .about__prod p, .about__return p, .about__help p, .about__info p, .about__conf p { padding-bottom: 15px; }
+
+.about__price i { background: url('../img/icons-s7311fab3b2.png') 0 -83px no-repeat; width: 36px; height: 37px; }
+
+.about__prod i { background: url('../img/icons-s7311fab3b2.png') 0 -271px no-repeat; width: 36px; height: 37px; }
+
+.about__return i { background: url('../img/icons-s7311fab3b2.png') 0 -177px no-repeat; width: 36px; height: 37px; }
+
+.about__help i { background: url('../img/icons-s7311fab3b2.png') 0 -36px no-repeat; width: 36px; height: 37px; }
+
+.about__info i { background: url('../img/icons-s7311fab3b2.png') 0 -224px no-repeat; width: 36px; height: 37px; }
+
+.about__conf i { background: url('../img/icons-s7311fab3b2.png') 0 -130px no-repeat; width: 36px; height: 37px; }
+
+.clothes { margin-bottom: 20px; padding: 0 20px; }
+.clothes li { padding: 18px 0; border-top: 1px solid #ddd; }
+.clothes li:first-child { border: none; }
+.clothes .h2 { margin-bottom: 15px; }
+
+.clothes__column { -webkit-column-count: 4; -webkit-column-gap: 20px; -moz-column-count: 4; -moz-column-gap: 20px; column-count: 4; column-gap: 20px; }
+.clothes__column p { padding-bottom: 15px; }
+
+.clothes_border { border-bottom: 1px solid #ddd; }
