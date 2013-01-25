@@ -8,8 +8,13 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/common.js"></script>
+	<style type="text/css">
+/*	* {
+		box-shadow: red 0 0 0 1px;
+	}*/
+	</style>
 </head>
 <body>
 <!-- BEGIN .header -->
@@ -38,9 +43,9 @@
 	<div class="profile__account">На вашем счету <a href="#">15210,34 грн</a> и <a href="#">100500 бонусов</a></div>
 	<div class="profile__info">		
 		<div class="user">
-			<div class="user__mail">
-				<button>Vasyliy.Pupkin@odnoklassniki.ru<i></i></button><em></em>
-			</div>
+			<button class="user__mail">
+				<span>Vasyliy.Pupkin@odnoklassniki.ru<i></i></span><em></em>
+			</button>
 			<div class="user__detail">
 				<ul>
 					<li class="user__id">Мой ID: 283484<i></i></li>
@@ -67,35 +72,114 @@
 <!-- END .profile -->
 <!-- BEGIN .products -->
 <section class="container">
-	<!-- BEGIN .actions 	
-	<ul class="action">
-		<li class="action__lvl-1">
-			<div class="action__pic" style="background-image: url(img/pic8.jpg)">
-				
+	<!-- BEGIN .actions --> 	
+	<div class="actions">
+		<div class="action action_big">
+			<div class="action__top">
+				<div class="action__pic" style="background-image: url(img/pic9.jpg)">
+					<div class="action__brand">
+						<div class="action__logo">
+							<img src="img/brands/brand1.png" alt="">
+						</div>						
+					</div>
+					<div class="action__discount">
+						<strong>40%</strong>
+						<span>CКИДКА</span>						
+					</div>
+				</div>
+				<div class="action__desc">
+					<div class="action__title">
+						<span>«Сумасшедший полдень»</span>
+						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
+					</div>
+					<div class="action__info">
+						<span class="action__time">Завершится через 7 дней<i></i></span>
+						<div class="action__view">
+							<span>Посмотреть</span><i>›</i>
+						</div>						
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="action action_medium">
+			<div class="action__top">
+				<div class="action__pic" style="background-image: url(img/pic8.jpg)">
+					<div class="action__brand">
+						<div class="action__logo">
+							<img src="img/brands/brand2.png" alt="">
+							<img src="img/brands/brand3.png" alt="">
+						</div>						
+					</div>
+					<div class="action__discount">
+						<strong>40%</strong>
+						<span>CКИДКА</span>						
+					</div>
+				</div>
+				<div class="action__desc">
+					<div class="action__title">
+						<span>«Сумасшедший полдень»</span>
+						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
+					</div>
+					<div class="action__info">
+						<span class="action__time">Завершится через 7 дней<i></i></span>
+						<div class="action__view">
+							<span>Посмотреть</span><i>›</i>
+						</div>						
+					</div>
+				</div>
 			</div>
-		</li>
-		<li class="action__lvl-2">
-			<div class="action__pic" style="background-image: url(img/pic8.jpg)">
+		</div>
+		<div class="action action_medium">
+			<div class="action__top">
+				<div class="action__pic" style="background-image: url(img/pic7.jpg)">
 				
+				</div>
 			</div>
-		</li>
-		<li class="action__lvl-3">
-			<div class="action__pic" style="background-image: url(img/pic8.jpg)">
+		</div>
+		<div class="action action_small">
+			<div class="action__top">
+				<div class="action__pic" style="background-image: url(img/pic6.jpg)">
 				
+				</div>
 			</div>
-		</li>
-		<li class="action__lvl-4">
-			<div class="action__pic" style="background-image: url(img/pic8.jpg)">
+		</div>
+		<div class="action action_small">
+			<div class="action__top">
+				<div class="action__pic" style="background-image: url(img/pic5.jpg)">
 				
+				</div>
 			</div>
-		</li>
-		<li class="action__lvl-5">
-			<div class="action__pic" style="background-image: url(img/pic8.jpg)">
+		</div>
+		<div class="action action_small">
+			<div class="action__top">
+				<div class="action__pic" style="background-image: url(img/pic4.jpg)">
 				
+				</div>
 			</div>
-		</li>
-	</ul>
-	 END .actions -->
+		</div>
+		<div class="action action_smallest">
+			<div class="action__top">
+				<div class="action__pic" style="background-image: url(img/pic3.jpg)">
+				
+				</div>
+			</div>
+		</div>
+		<div class="action action_smallest">
+			<div class="action__top">
+				<div class="action__pic" style="background-image: url(img/pic2.jpg)">
+				
+				</div>
+			</div>
+		</div>
+		<div class="action action_smallest">
+			<div class="action__top">
+				<div class="action__pic" style="background-image: url(img/pic1.jpg)">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END .actions -->
 	<!-- BEGIN .banner -->
 	<div class="banner">
 		

@@ -1,14 +1,12 @@
 @import "compass/css3";
 
 // responsive
-$step1900: 1900px;
-$break-large: 1180px;
 @mixin respond-to($media) {
-  @if $media == step1900 {
-    @media only screen and (max-width: $step1900) { @content; }
+  @if $media == step1 {
+    @media only screen and (min-width: 1280px) and (max-width: 1650px) { @content; }
   }
-  @else if $media == wide {
-    @media only screen and (min-width: $break-large) { @content; }
+  @else if $media == step2 {
+    @media only screen and (max-width: $break-large) { @content; }
   }
 }
 // retina bg

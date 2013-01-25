@@ -47,9 +47,10 @@ table {
 	font-size: 14px;
 }
 .wrap, .container {	
-	padding: 0 45px;
-	@include respond-to(step1900) {
-		width: auto;
+	margin: 0 50px;
+	@include respond-to(step1) {
+		width: 1180px;
+		margin: 0 auto;
 	}
 }
 //header
@@ -113,6 +114,7 @@ table {
 //profile
 .profile {
 	height: 52px;
+	margin-bottom: 20px;
 	background: #ededed;
 	@include box-shadow(rgba(0,0,0,0.08) 0 2px 4px);
 	border-bottom: 1px solid #dedede;
@@ -192,10 +194,12 @@ table {
 }
 .user__mail {
 	display: block;
+	width: 251px;
 	height: 52px;	
 	padding-left: 20px;	
 	line-height: 52px;
-	button {
+	text-align: left;
+	span {
 		position: relative;
 		border-bottom: 1px dashed $blue;
 		font-size: 12px;
@@ -216,6 +220,7 @@ table {
 		border-right: 1px solid #ccc;
 	}
 }
+.user__detail {}
 .user__orders, .profile__returns, .user__exit {
 	a {
 		font-weight: bold;
@@ -236,7 +241,6 @@ table {
 	padding: 20px 0;
 	background: #000;
 	.container {
-		padding: 0 65px;
 		overflow: hidden;
 	}
 }
