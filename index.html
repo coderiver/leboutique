@@ -11,7 +11,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/common.js"></script>
 	<style type="text/css">
-/*	* {
+	/** {
 		box-shadow: red 0 0 0 1px;
 	}*/
 	</style>
@@ -20,63 +20,48 @@
 <!-- BEGIN .header -->
 <header class="header">
 	<section class="container">
-		<div class="logo">
-			<a href="#">le Boutique</a>
-		</div>		
-		<a href="#" class="card-link">Корзина<span><b>2</b></span></a>
-		<nav class="nav">
-			<ul>
-				<li><a href="#">Женcкое</a></li>
-				<li><a href="#">Мужское</a></li>
-				<li><a href="#">Детское</a></li>
-				<li><a href="#">Для дома</a></li>
-			</ul>
-		</nav>
+		<div class="user-link">
+			<b>Кабинет<i></i></b>
+			<p>Здравствуйте, <a href="#">Василий!</a></p>
+		</div>
+		<h1 class="logo">
+			<a href="#">leBoutique</a>
+		</h1>
+		<div class="bonus-link">
+			<b>Кошелек<i></i></b>
+			<p>На счету <strong>0 бонусов</strong>. <a href="#">Как их получить?</a></p>
+		</div>
 	</section>
 </header>
 <!-- END .header -->
-<!-- BEGIN .profile -->
-<section class="profile">
+<!-- BEGIN .nav -->
+<section class="nav-wrap">
 	<div class="container">
-		<div class="profile__subscribe"><a href="#">Персонализировать</a> ежедневную рассылку????</div>
-	</div>
-	<div class="profile__account">На вашем счету <a href="#">15210,34 грн</a> и <a href="#">100500 бонусов</a></div>
-	<div class="profile__info">		
-		<div class="user">
-			<button class="user__mail">
-				<span>Vasyliy.Pupkin@odnoklassniki.ru<i></i></span><em></em>
-			</button>
-			<div class="user__detail">
-				<ul>
-					<li class="user__id">Мой ID: 283484<i></i></li>
-					<li class="user__orders"><a href="#">Мои заказы</a><i></i></li>
-					<li class="user__returns"><a href="#">Мои возвраты</a><i></i></li>
-				</ul>
-				<ul>
-					<li class="user__setting"><a href="#">Настроить профиль</a><i></i></li>
-					<li class="user__subscribe"><a href="#">Настроить рассылку</a><i></i></li>
-					<li class="user__account"><a href="#">Бонусный счёт</a><i></i></li>
-				</ul>
-				<ul>
-					<li class="user__expected"><a href="#">Ожидаемые товары</a><i></i></li>
-					<li class="user__likes"><a href="#">Любимые бренды</a><i></i></li>
-					<li class="user__friend"><a href="#">Пригласить друга</a><i></i></li>
-				</ul>
-				<ul class="user__exit">
-					<li><a href="#">Выйти</a><i></i></li>
-				</ul>
-			</div>
+		<div class="phone">
+			<b>+380 44 591-28-28<i></i></b>
 		</div>
+		<div class="cart-link">
+			<a href="#">Корзина<span>3</span><i></i></a>
+		</div>
+		<nav class="nav">
+			<ul>
+				<li><a href="#">Женcкое</a></li>
+				<li><a class="active" href="#">Мужское</a></li>
+				<li><a href="#">Детское</a></li>
+				<li><a href="#">Для дома</a></li>
+			</ul>
+		</nav>		
 	</div>
 </section>
-<!-- END .profile -->
+<!-- END .nav -->
 <!-- BEGIN .products -->
-<section class="container">
+<section class="container container_oh">
+	<h2 class="h2 title">Стильная мужская одежда, обувь и аксессуары</h2>
 	<!-- BEGIN .actions --> 	
 	<div class="actions">
 		<div class="action action_big">
-			<div class="action__top">
-				<div class="action__pic" style="background-image: url(img/pic9.jpg)">
+			<div class="action__inner">
+				<a href="#" class="action__pic" style="background-image: url(img/pic9.jpg)">
 					<div class="action__brand">
 						<div class="action__logo">
 							<img src="img/brands/brand1.png" alt="">
@@ -86,24 +71,29 @@
 						<strong>40%</strong>
 						<span>CКИДКА</span>						
 					</div>
-				</div>
+				</a>
 				<div class="action__desc">
 					<div class="action__title">
-						<span>«Сумасшедший полдень»</span>
+						<a href="#">«Сумасшедший полдень»</a>
 						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
 					</div>
 					<div class="action__info">
 						<span class="action__time">Завершится через 7 дней<i></i></span>
 						<div class="action__view">
-							<span>Посмотреть</span><i>›</i>
+							<a href="#">Посмотреть</a><i>›</i>
 						</div>						
 					</div>
 				</div>
 			</div>			
 		</div>
+		<div class="action action_adv">
+			<div class="action_adv-inner">
+				<span>Пригласи друга и получи скидку</span>
+			</div>
+		</div>
 		<div class="action action_medium">
-			<div class="action__top">
-				<div class="action__pic" style="background-image: url(img/pic8.jpg)">
+			<div class="action__inner">
+				<a href="#" class="action__pic" style="background-image: url(img/pic8.jpg)">
 					<div class="action__brand">
 						<div class="action__logo">
 							<img src="img/brands/brand2.png" alt="">
@@ -114,69 +104,216 @@
 						<strong>40%</strong>
 						<span>CКИДКА</span>						
 					</div>
-				</div>
+				</a>
 				<div class="action__desc">
 					<div class="action__title">
-						<span>«Сумасшедший полдень»</span>
+						<a href="#">«Сумасшедший полдень»</a>
 						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
 					</div>
 					<div class="action__info">
 						<span class="action__time">Завершится через 7 дней<i></i></span>
 						<div class="action__view">
-							<span>Посмотреть</span><i>›</i>
+							<a href="#">Посмотреть</a><i>›</i>
 						</div>						
 					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<div class="action action_medium">
-			<div class="action__top">
-				<div class="action__pic" style="background-image: url(img/pic7.jpg)">
-				
+			<div class="action__inner">
+				<a href="#" class="action__pic" style="background-image: url(img/pic7.jpg)">
+					<div class="action__brand">
+						<div class="action__logo">
+							<img src="img/brands/brand2.png" alt="">
+							<img src="img/brands/brand3.png" alt="">
+						</div>						
+					</div>
+					<div class="action__discount">
+						<strong>40%</strong>
+						<span>CКИДКА</span>						
+					</div>
+				</a>
+				<div class="action__desc">
+					<div class="action__title">
+						<a href="#">«Сумасшедший полдень»</a>
+						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
+					</div>
+					<div class="action__info">
+						<span class="action__time">Завершится через 7 дней<i></i></span>
+						<div class="action__view">
+							<a href="#">Посмотреть</a><i>›</i>
+						</div>						
+					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<div class="action action_small">
-			<div class="action__top">
-				<div class="action__pic" style="background-image: url(img/pic6.jpg)">
-				
+			<div class="action__inner">
+				<a href="#" class="action__pic" style="background-image: url(img/pic6.jpg)">
+					<div class="action__brand">
+						<div class="action__logo">
+							<img src="img/brands/brand2.png" alt="">
+							<img src="img/brands/brand3.png" alt="">
+						</div>						
+					</div>
+					<div class="action__discount">
+						<strong>40%</strong>
+						<span>CКИДКА</span>						
+					</div>
+				</a>
+				<div class="action__desc">
+					<div class="action__title">
+						<a href="#">«Сумасшедший полдень»</a>
+						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
+					</div>
+					<div class="action__info">
+						<span class="action__time">Завершится через 7 дней<i></i></span>
+						<div class="action__view">
+							<a href="#">Посмотреть</a><i>›</i>
+						</div>						
+					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<div class="action action_small">
-			<div class="action__top">
-				<div class="action__pic" style="background-image: url(img/pic5.jpg)">
-				
+			<div class="action__inner">
+				<a href="#" class="action__pic" style="background-image: url(img/pic5.jpg)">
+					<div class="action__brand">
+						<div class="action__logo">
+							<img src="img/brands/brand2.png" alt="">
+							<img src="img/brands/brand3.png" alt="">
+						</div>						
+					</div>
+					<div class="action__discount">
+						<strong>40%</strong>
+						<span>CКИДКА</span>						
+					</div>
+				</a>
+				<div class="action__desc">
+					<div class="action__title">
+						<a href="#">«Сумасшедший полдень»</a>
+						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
+					</div>
+					<div class="action__info">
+						<span class="action__time">Завершится через 7 дней<i></i></span>
+						<div class="action__view">
+							<a href="#">Посмотреть</a><i>›</i>
+						</div>						
+					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<div class="action action_small">
-			<div class="action__top">
-				<div class="action__pic" style="background-image: url(img/pic4.jpg)">
-				
+			<div class="action__inner">
+				<a href="#" class="action__pic" style="background-image: url(img/pic4.jpg)">
+					<div class="action__brand">
+						<div class="action__logo">
+							<img src="img/brands/brand2.png" alt="">
+							<img src="img/brands/brand3.png" alt="">
+						</div>						
+					</div>
+					<div class="action__discount">
+						<strong>40%</strong>
+						<span>CКИДКА</span>						
+					</div>
+				</a>
+				<div class="action__desc">
+					<div class="action__title">
+						<a href="#">«Сумасшедший полдень»</a>
+						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
+					</div>
+					<div class="action__info">
+						<span class="action__time">Завершится через 7 дней<i></i></span>
+						<div class="action__view">
+							<a href="#">Посмотреть</a><i>›</i>
+						</div>						
+					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<div class="action action_smallest">
-			<div class="action__top">
-				<div class="action__pic" style="background-image: url(img/pic3.jpg)">
-				
+			<div class="action__inner">
+				<a href="#" class="action__pic" style="background-image: url(img/pic3.jpg)">
+					<div class="action__brand">
+						<div class="action__logo">
+							<img src="img/brands/brand2.png" alt="">
+							<img src="img/brands/brand3.png" alt="">
+						</div>						
+					</div>
+					<div class="action__discount">
+						<strong>40%</strong>
+						<span>CКИДКА</span>						
+					</div>
+				</a>
+				<div class="action__desc">
+					<div class="action__title">
+						<a href="#">«Сумасшедший полдень»</a>
+						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
+					</div>
+					<div class="action__info">
+						<span class="action__time">Завершится через 7 дней<i></i></span>
+						<div class="action__view">
+							<a href="#">Посмотреть</a><i>›</i>
+						</div>						
+					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<div class="action action_smallest">
-			<div class="action__top">
-				<div class="action__pic" style="background-image: url(img/pic2.jpg)">
-				
+			<div class="action__inner">
+				<a href="#" class="action__pic" style="background-image: url(img/pic2.jpg)">
+					<div class="action__brand">
+						<div class="action__logo">
+							<img src="img/brands/brand2.png" alt="">
+							<img src="img/brands/brand3.png" alt="">
+						</div>						
+					</div>
+					<div class="action__discount">
+						<strong>40%</strong>
+						<span>CКИДКА</span>						
+					</div>
+				</a>
+				<div class="action__desc">
+					<div class="action__title">
+						<a href="#">«Сумасшедший полдень»</a>
+						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
+					</div>
+					<div class="action__info">
+						<span class="action__time">Завершится через 7 дней<i></i></span>
+						<div class="action__view">
+							<a href="#">Посмотреть</a><i>›</i>
+						</div>						
+					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<div class="action action_smallest">
-			<div class="action__top">
-				<div class="action__pic" style="background-image: url(img/pic1.jpg)">
-				
+			<div class="action__inner">
+				<a href="#" class="action__pic" style="background-image: url(img/pic1.jpg)">
+					<div class="action__brand">
+						<div class="action__logo">
+							<img src="img/brands/brand2.png" alt="">
+							<img src="img/brands/brand3.png" alt="">
+						</div>						
+					</div>
+					<div class="action__discount">
+						<strong>40%</strong>
+						<span>CКИДКА</span>						
+					</div>
+				</a>
+				<div class="action__desc">
+					<div class="action__title">
+						<a href="#">«Сумасшедший полдень»</a>
+						<p>Посуда и кухонные принадлежности BergHoff от 19 грн</p>
+					</div>
+					<div class="action__info">
+						<span class="action__time">Завершится через 7 дней<i></i></span>
+						<div class="action__view">
+							<a href="#">Посмотреть</a><i>›</i>
+						</div>						
+					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 	</div>
 	<!-- END .actions -->
@@ -210,19 +347,7 @@
 						<a href="#">Calvin Klein</a>
 						<p>Куртки, регланы, джинсы, рубашки</p>
 					</div>				
-				</li>
-				<li>
-					<div class="soon__desc">
-						<a href="#">Calvin Klein</a>
-						<p>Куртки, регланы, джинсы, рубашки</p>
-					</div>				
-				</li>
-				<li>
-					<div class="soon__desc">
-						<a href="#">Calvin Klein</a>
-						<p>Изысканные платья, туники, пуловеры и шарфы</p>
-					</div>				
-				</li>
+				</li>				
 				<li>
 					<div class="soon__desc">
 						<a href="#">Calvin Klein</a>
@@ -326,44 +451,50 @@
 <!-- BEGIN .footer -->
 <section class="footer">
 	<div class="container">
-		<ul class="copyright">
-			<li><a href="#">LeBoutique</a></li>
-			<li><a href="#">© 2010–2012 ООО «Ле Бутик»</a></li>
-			<li><a href="#">Политика конфиденциальности</a></li>
-			<li><a href="#">Пользовательское соглашение</a></li>
-		</ul>
-		<nav class="footer__nav">
-			<ul>
-				<li>О клубе</li>
-				<li><a href="#">Шоппинг-клуб LeBoutique</a></li>
-				<li><a href="#">Как это работает?</a></li>
-				<li><a href="#">Вопросы и ответы (FAQ)</a></li>
-				<li><a href="#">Контакты</a></li>
+		<div class="footer__left">
+			<ul class="copyright">
+				<li><a href="#">LeBoutique</a></li>
+				<li><a href="#">© 2010–2012 ООО «Ле Бутик»</a></li>
+				<li><a href="#">Политика конфиденциальности</a></li>
+				<li><a href="#">Пользовательское соглашение</a></li>
 			</ul>
-			<ul>
-				<li>Покупки</li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Возврат</a></li>
-				<li><a href="#">Гарантии</a></li>
+			<nav class="footer__nav-1">
+				<ul>
+					<li>О клубе</li>
+					<li><a href="#">Шоппинг-клуб LeBoutique</a></li>
+					<li><a href="#">Как это работает?</a></li>
+					<li><a href="#">Вопросы и ответы (FAQ)</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>			
+			</nav>
+			<nav class="footer__nav-2">
+				<ul>
+					<li>Покупки</li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Возврат</a></li>
+					<li><a href="#">Гарантии</a></li>
+				</ul>
+			</nav>
+			<div class="footer__adress">
+				<strong>+380 (44) 591-28-28</strong>
+				<a href="mailto:support@leboutique.com.ua">support@leboutique.com.ua</a>
+				<p>ул. Григория Сковороды, 1<br>Киев, 04070<br>Украина</p>
+			</div>	
+		</div>
+		<div class="footer__right">			
+			<ul class="footer__social">
+				<li class="footer__social-title">Мы в соцсетях</li>
+				<li class="footer__social-vk"><a href="#">Вконтакте<i></i></a></li>
+				<li class="footer__social-fb"><a href="#">Facebook<i></i></a></li>
+				<li class="footer__social-pr"><a href="#">Pinterest<i></i></a></li>
 			</ul>
-		</nav>
-		<div class="footer__adress">
-			<strong>+380 (44) 591-28-28</strong>
-			<a href="mailto:support@leboutique.com.ua">support@leboutique.com.ua</a>
-			<p>ул. Григория Сковороды, 1<br>Киев, 04070<br>Украина</p>
-		</div>		
-		<ul class="footer__social">
-			<li>Мы в соцсетях</li>
-			<li class="footer__social-vk"><a href="#">Вконтакте<i></i></a></li>
-			<li class="footer__social-fb"><a href="#">Facebook<i></i></a></li>
-			<li class="footer__social-pr"><a href="#">Pinterest<i></i></a></li>
-		</ul>
-		<ul class="payment">
-			<li class="payment__vs"></li>
-			<li class="payment__mc"></li>
-			<li class="payment__pb"></li>
-		</ul>
+			<ul class="payment">
+				<li class="payment__vs"></li>
+				<li class="payment__mc"></li>
+				<li class="payment__pb"></li>
+			</ul>
+		</div>	
 	</div>
 </section>
 <!-- END .footer -->

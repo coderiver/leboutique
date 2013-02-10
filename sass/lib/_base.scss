@@ -3,10 +3,19 @@
 // responsive
 @mixin respond-to($media) {
   @if $media == step1 {
-    @media only screen and (min-width: 1280px) and (max-width: 1650px) { @content; }
+    @media only screen and (max-width: 980px) { @content; }
   }
   @else if $media == step2 {
-    @media only screen and (max-width: $break-large) { @content; }
+    @media only screen and (min-width: 980px) and (max-width: 1220px) { @content; }
+  }
+  @else if $media == step3 {
+    @media only screen and (min-width: 1220px) and (max-width: 1600px) { @content; }
+  }
+  @else if $media == step4 {
+    @media only screen and (min-width: 1600px) and (max-width: 1900px) { @content; }
+  }
+  @else if $media == step5 {
+    @media only screen and (min-width: 1900px) { @content; }
   }
 }
 // retina bg

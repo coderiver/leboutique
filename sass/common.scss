@@ -39,213 +39,208 @@ table {
 }
 // common styles
 .h2 {
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: normal;
 	color: #000;
 }
 .h3 {
 	font-size: 14px;
 }
-.wrap, .container {	
-	margin: 0 50px;
+.title {
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+}
+.container {	
+	margin: 0 20px;
 	@include respond-to(step1) {
-		width: 1180px;
-		margin: 0 auto;
-	}
+       width: 980px;
+    }
+    @include respond-to(step2) {
+       width: auto;
+    }
+    @include respond-to(step3) {
+       width: auto;
+    }
+    @include respond-to(step4) {
+       width: auto;
+    }
+}
+.container_oh {
+	overflow: hidden;
 }
 //header
-.header {
-	height: 50px;
-	background: #009ccf;
+.header {	
+	background: #f4f4f4;
+	.container {
+		position: relative;
+		height: 73px;
+	}
 }
 .logo {
-	float: left;	
-	margin: 11px 0 0 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -21px 0 0 -102px;	
 	a {
 		display: block;
 		@include sized-sprite($icons, logo);
 		@extend %hide-text;
 	}
 }
-.nav {
-	padding-top: 16px;
-	ul {
-		text-align: center;
-	}
-	li {
-		display: inline-block;
-		padding: 0 40px;
-	}
-	a {
+.user-link, .bonus-link {
+	margin-top: 17px;
+	b {
+		position: relative;
 		font-size: 14px;
-		color: #fff;
-		font-weight: bold;
-		text-decoration: none;
 		text-transform: uppercase;
+	}
+	i {
+		position: absolute;				
+	}
+	p {
+		margin-top: 6px;
+	}
+}
+.user-link {
+	float: left;
+	margin-left: 20px;
+	b {		
+		padding-left: 25px;		
+	}
+	i {		
+		top: -2px;
+		left: 0;
+		@include sized-sprite($icons, user-link);
 	}	
 }
-.card-link {
-	position: relative;
+.bonus-link {
 	float: right;
-	margin: 16px 20px 0 0;
-	padding-right: 30px;
-	font-family: Arial, Tahoma, sans-serif;
-	font-size: 14px;
-	color: #fff;
-	font-weight: bold;
-	text-decoration: none;
-	text-transform: uppercase;
-	span {
-		position: absolute;
-		top: 0;
-		right: 0;
-		@include sized-sprite($icons, card);
-	}
-	b {
-		position: absolute;
-		top: -7px;
-		right: -7px;
-		padding: 0 4px;
-		background: #e41f32;
-		@include border-radius(50%);
-		font-size: 11px;
-	}
-}
-//profile
-.profile {
-	height: 52px;
-	margin-bottom: 20px;
-	background: #ededed;
-	@include box-shadow(rgba(0,0,0,0.08) 0 2px 4px);
-	border-bottom: 1px solid #dedede;
-}
-.profile__subscribe {
-	float: left;
-	padding: 18px 0 0 20px;
-	color: $gray;
-	a {
-		color: $blue;
-		font-weight: bold;
-		text-decoration: underline;
-	}
-}
-.profile__account {
-	float: right;
-	padding: 18px 20px 0 0;
-	a {
-		color: $blue;
-		font-weight: bold;
-		text-decoration: underline;
-	}
-}
-.profile__info {
-	float: right;
-	position: relative;
-	width: 251px;
-	height: 53px;
 	margin-right: 20px;
-}
-.user {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 251px;	
-	@include border-radius(0 0 5px 5px);
-	z-index: 10;
-	ul {
-		display: none;
-		padding-top: 19px;
-		border-top: 1px solid #fff;
-		border-bottom: 1px solid #c6c6c6;
+	b {
+		display: block;
+		text-align: right;
+		padding-right: 31px;
 	}
-	li {
-		position: relative;
-		margin-bottom: 19px;
-		padding-left: 45px;
-		i {
-			position: absolute;
-			top: 0;
-			left: 20px;
-		}
+	i {		
+		top: 0px;
+		right: 0;
+		@include sized-sprite($icons, bonus-link);
 	}
-	.user__exit {
-		border: none;
-	}
-	&.active {
-		background: #f1f1f1;
-		@include box-shadow(rgba(0,0,0,0.1) 0 0 15px);
-		.user__mail {
-			border-bottom: 1px solid #c6c6c6;
-			button {
-				color: $red;
-				border-color: $red;
-			}
-			i {
-				@include sized-sprite($icons, arr2);
-			}
-			em {
-				display: none;
-			}
-		}
-		ul {
-			display: block;
-		}
-	}
-}
-.user__mail {
-	display: block;
-	width: 251px;
-	height: 52px;	
-	padding-left: 20px;	
-	line-height: 52px;
-	text-align: left;
-	span {
-		position: relative;
-		border-bottom: 1px dashed $blue;
-		font-size: 12px;
+	a {
 		font-weight: bold;
-		color: $blue;
+	}
+}
+//nav
+.nav-wrap {	
+	background: #000;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+.nav {
+	text-align: center;
+	font-size: 0;
+	li {
+		display: inline-block;
+		height: 50px;
+		padding: 0 20px;
+		line-height: 50px;
+		font-size: 14px;
+	}
+	a {
+		color: #fff;
+		text-decoration: none;		
+		&.active {
+			padding-bottom: 2px;
+			border-bottom: 2px solid $red;
+		}
+	}
+}
+.phone {
+	float: left;
+	height: 50px;
+	margin-left: 20px;	
+	line-height: 50px;
+	b {
+		position: relative;
+		padding-left: 30px;
 	}
 	i {
 		position: absolute;
-		top: 5px;
-		right: -16px;
-		@include sized-sprite($icons, arr1);
-	}
-	em {
-		position: absolute;
-		top: 19px;
-		right: 0;
-		height: 12px;
-		border-right: 1px solid #ccc;
+		top: 0;
+		left: 0;
+		@include sized-sprite($icons, phone);
 	}
 }
-.user__detail {}
-.user__orders, .profile__returns, .user__exit {
+.cart-link {
+	float: right;
+	margin-right: 20px;
+	height: 50px;	
+	line-height: 50px;
 	a {
-		font-weight: bold;
+		position: relative;
+		padding-right: 32px;
+		color: #fff;
+		text-decoration: none;
+	}
+	i, span {
+		position: absolute;
+	}
+	i {
+		top: 1px;
+		right: 9px;
+		@include sized-sprite($icons, cart);
+	}
+	span {
+		top: -4px;
+		right: 0;
+		height: 15px;
+		padding: 0 4px;
+		background: $red;
+		@include border-radius(50%);
+		line-height: 15px;
+		color: #fff;
+		font-size: 12px;
+		font-weight: bold;	
+		z-index: 10;	
 	}
 }
-.user__id { i {@include sized-sprite($icons, ico1);}}
-.user__orders { i {@include sized-sprite($icons, ico2);}}
-.user__returns { i {@include sized-sprite($icons, ico3);}}
-.user__setting { i {@include sized-sprite($icons, ico4);}}
-.user__subscribe { i {@include sized-sprite($icons, ico5);}}
-.user__account { i {@include sized-sprite($icons, ico6);}}
-.user__expected { i {@include sized-sprite($icons, ico7);}}
-.user__likes { i {@include sized-sprite($icons, ico8);}}
-.user__friend { i {@include sized-sprite($icons, ico9);}}
-.user__exit { i {@include sized-sprite($icons, ico10);}}
 //footer 
 .footer {
-	padding: 20px 0;
+	position: relative;
+	padding: 20px;
 	background: #000;
 	.container {
 		overflow: hidden;
 	}
 }
-.copyright {
+.footer__left {
 	float: left;
+	width: 80%;
+	@include respond-to(step1) {
+       	float: none;
+       	width: 100%;
+       	padding-bottom: 15px;
+       	margin-bottom: 20px;
+       	border-bottom: 1px solid #333;
+       	overflow: hidden; 
+    }      
+}
+.footer__right {
+	float: right;
+	width: 20%;
+	@include respond-to(step1) {
+       	float: none;
+       	width: 100%;
+    } 
+}
+.copyright, .footer__nav-1, .footer__nav-2, .footer__adress {
+	float: left;
+}
+.copyright {
+	width: 30%;
 	li {
 		margin-bottom: 5px;
 		&:first-child {
@@ -264,8 +259,7 @@ table {
 		}
 	}
 }
-.footer__nav {
-	float: left;
+.footer__nav-1, .footer__nav-2 {
 	ul {
 		float: left;
 	}
@@ -285,8 +279,14 @@ table {
 		}
 	}
 }
+.footer__nav-1 {
+	width: 25%;
+}
+.footer__nav-2 {
+	width: 18%;
+}
 .footer__adress {
-	float: left;
+	width: 27%;
 	color: #fff;
 	strong {
 		display: block;
@@ -303,13 +303,6 @@ table {
 	color: #fff;
 	li {
 		margin-bottom: 15px;
-		&:first-child {
-			display: block;
-			padding: 7px 0;
-			margin-bottom: 5px;
-			font-size: 14px;
-			font-weight: bold;
-		}
 	}
 	a {
 		position: relative;
@@ -325,9 +318,29 @@ table {
 	}
 	i {
 		position: absolute;
-		top: -4px;
+		top: -3px;
 		left: 0;
 		@include border-radius(2px);
+	}
+	@include respond-to(step1) {
+		float: none;
+       	text-align: center;
+       	font-size: 0;
+       	li {
+       		display: inline-block;
+       		padding: 0 8px;
+       		font-size: 12px;
+       	}
+    } 
+    .footer__social-title {
+	display: block;
+	padding: 7px 0;
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: bold;
+		@include respond-to(step1) {
+	       	display: none;
+	    } 
 	}
 }
 .footer__social-vk { i {@include sized-sprite($icons, ft-vk);}}
@@ -335,11 +348,20 @@ table {
 .footer__social-pr { i {@include sized-sprite($icons, ft-pr);}}
 //payment
 .payment {
-	float: left;
+	float: right;
 	padding-top: 15px;
 	li {
 		margin-bottom: 20px;
 	}
+	@include respond-to(step1) {
+       	float: none;
+       	text-align: center;
+       	font-size: 0;
+       	li {
+       		display: inline-block;
+       		padding: 0 10px;
+       	}
+    } 
 }
 .payment__vs {@include sized-sprite($icons, pay-vs);}
 .payment__mc {@include sized-sprite($icons, pay-mc);}
