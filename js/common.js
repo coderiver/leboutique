@@ -3,7 +3,6 @@ $(document).ready(function() {
 //window width
 function window_width() {	
 	var wnd_width = $(window).width();
-	$('.user-link b').text(wnd_width);
 	if (wnd_width >= 980 && wnd_width <= 1220) {
 		$('.action_big').css('width', '100%');
 		$('.action_small, .action_smallest').css('width', '50%');

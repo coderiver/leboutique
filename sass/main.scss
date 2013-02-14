@@ -20,12 +20,16 @@
     @include respond-to(step4) {
        display: none;
     }
+    @include respond-to(step5) {
+       display: none;
+    }
 }
 .action_adv-inner {
 	height: 353px;
 	line-height: 353px;
 	margin: 5px;
 	background: gray;
+	border-bottom: 1px solid #ddd;
 	span {
 		display: block;
 		text-align: center;
