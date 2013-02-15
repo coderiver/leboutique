@@ -22,7 +22,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .title { height: 64px; line-height: 64px; text-align: center; }
 
-.container { margin: 0 20px; }
+.container { max-width: 1900px; margin: 0 auto; padding: 0 20px; }
 @media only screen and (max-width: 980px) { .container { width: 980px; } }
 @media only screen and (min-width: 980px) and (max-width: 1220px) { .container { width: auto; } }
 @media only screen and (min-width: 1220px) and (max-width: 1600px) { .container { width: auto; } }
