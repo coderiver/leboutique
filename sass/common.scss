@@ -56,23 +56,23 @@ table {
 	margin: 0 auto;
 	padding: 0 20px;
 	@include respond-to(step1) {
-       width: 980px;
-    }
-    @include respond-to(step2) {
-       width: auto;
-    }
-    @include respond-to(step3) {
-       width: auto;
-    }
-    @include respond-to(step4) {
-       width: auto;
-    }
+    width: 980px;
+  }
+  @include respond-to(step2) {
+    width: auto;
+  }
+  @include respond-to(step3) {
+    width: auto;
+  }
+  @include respond-to(step4) {
+    width: auto;
+  }
 }
 .container_oh {
 	overflow: hidden;
 }
 //header
-.header {	
+.header {
 	background: #f4f4f4;
 	.container {
 		position: relative;
@@ -87,6 +87,7 @@ table {
 	a {
 		display: block;
 		@include sized-sprite($icons, logo);
+		@include retina() { @include sized-sprite($icons, logo_r);}
 		@extend %hide-text;
 	}
 }
@@ -114,6 +115,7 @@ table {
 		top: -2px;
 		left: 0;
 		@include sized-sprite($icons, user-link);
+		@include retina() { @include sized-sprite($icons, user-link_r);}
 	}	
 }
 .bonus-link {
@@ -127,7 +129,8 @@ table {
 	i {		
 		top: 0px;
 		right: 0;
-		@include sized-sprite($icons, bonus-link);
+		@include sized-sprite($icons, bonus-link);		
+		@include retina() { @include sized-sprite($icons, bonus-link_r);}
 	}
 	a {
 		font-weight: bold;
@@ -140,6 +143,9 @@ table {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #fff;
+	.container {
+		background: #000;
+	}
 }
 .nav {
 	text-align: center;
@@ -147,7 +153,7 @@ table {
 	li {
 		display: inline-block;
 		height: 50px;
-		padding: 0 20px;
+		padding: 0 40px;
 		line-height: 50px;
 		font-size: 14px;
 	}
@@ -174,6 +180,7 @@ table {
 		top: 0;
 		left: 0;
 		@include sized-sprite($icons, phone);
+		@include retina() { @include sized-sprite($icons, phone_r);}
 	}
 }
 .cart-link {
@@ -194,6 +201,7 @@ table {
 		top: 1px;
 		right: 9px;
 		@include sized-sprite($icons, cart);
+		@include retina() { @include sized-sprite($icons, cart_r);}
 	}
 	span {
 		top: -4px;
@@ -211,38 +219,42 @@ table {
 }
 //footer 
 .footer {
-	position: relative;
-	padding: 20px;
+	position: relative;	
 	background: #000;
-	.container {
+	.container {		
+		padding: 20px;
+		background: #000;
 		overflow: hidden;
 	}
 }
 .footer__left {
 	float: left;
 	width: 80%;
-	@include respond-to(step1) {
-       	float: none;
-       	width: 100%;
-       	padding-bottom: 15px;
-       	margin-bottom: 20px;
-       	border-bottom: 1px solid #333;
-       	overflow: hidden; 
-    }      
+	@include respond-to(step2) {
+    float: none;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    overflow: hidden; 
+  }      
 }
 .footer__right {
 	float: right;
 	width: 20%;
-	@include respond-to(step1) {
-       	float: none;
-       	width: 100%;
-    } 
+	@include respond-to(step2) {
+    float: none;
+    width: 100%;
+  } 
 }
 .copyright, .footer__nav-1, .footer__nav-2, .footer__adress {
 	float: left;
 }
 .copyright {
 	width: 30%;
+	ul {
+		padding-left: 20px;
+	}
 	li {
 		margin-bottom: 5px;
 		&:first-child {
@@ -268,7 +280,7 @@ table {
 	li {
 		margin-bottom: 5px;
 		&:first-child {
-			padding: 7px;
+			padding: 7px 0;
 			font-size: 14px;
 			font-weight: bold;
 			color: #fff;
@@ -324,7 +336,7 @@ table {
 		left: 0;
 		@include border-radius(2px);
 	}
-	@include respond-to(step1) {
+	@include respond-to(step2) {
 		float: none;
        	text-align: center;
        	font-size: 0;
@@ -340,22 +352,37 @@ table {
 	margin-bottom: 5px;
 	font-size: 14px;
 	font-weight: bold;
-		@include respond-to(step1) {
+		@include respond-to(step2) {
 	       	display: none;
 	    } 
 	}
 }
-.footer__social-vk { i {@include sized-sprite($icons, ft-vk);}}
-.footer__social-fb { i {@include sized-sprite($icons, ft-fb);}}
-.footer__social-pr { i {@include sized-sprite($icons, ft-pr);}}
+.footer__social-vk { 
+	i {
+		@include sized-sprite($icons, ft-vk);
+		@include retina() { @include sized-sprite($icons, ft-vk_r);}
+	}
+}
+.footer__social-fb { 
+	i {
+		@include sized-sprite($icons, ft-fb);
+		@include retina() { @include sized-sprite($icons, ft-fb_r);}
+	}
+}
+.footer__social-pr { 
+	i {
+		@include sized-sprite($icons, ft-pr);
+		@include retina() { @include sized-sprite($icons, ft-pr_r);}
+	}
+}
 //payment
 .payment {
 	float: right;
-	padding-top: 15px;
+	padding: 15px 20px 0 0;
 	li {
 		margin-bottom: 20px;
 	}
-	@include respond-to(step1) {
+	@include respond-to(step2) {
        	float: none;
        	text-align: center;
        	font-size: 0;
@@ -365,6 +392,15 @@ table {
        	}
     } 
 }
-.payment__vs {@include sized-sprite($icons, pay-vs);}
-.payment__mc {@include sized-sprite($icons, pay-mc);}
-.payment__pb {@include sized-sprite($icons, pay-pb);}
+.payment__vs {
+	@include sized-sprite($icons, pay-vs);
+	@include retina() { @include sized-sprite($icons, pay-vs_r);}
+}
+.payment__mc {
+	@include sized-sprite($icons, pay-mc);
+	@include retina() { @include sized-sprite($icons, pay-mc_r);}
+}
+.payment__pb {
+	@include sized-sprite($icons, pay-pb);
+	@include retina() { @include sized-sprite($icons, pay-pb_r);}
+}
