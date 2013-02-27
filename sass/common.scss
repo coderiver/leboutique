@@ -5,9 +5,9 @@
 	-webkit-text-size-adjust: none;
 }
 body {
-	background: #f1f1f1;
+	background: #f4f4f4;
 	font: {
-	  family: Helvetica, Arial, Tahoma, sans-serif;
+	  family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif;
 	  weight: normal;
 	  size: 12px;
 	}
@@ -20,6 +20,12 @@ a img, fieldset {
 }
 a {
 	color: $blue;
+	&:hover {
+		color: $red;
+	}
+	//&:visited {
+	//	color: $visit;
+	//}
 }
 li {
 	list-style: none;
@@ -38,37 +44,37 @@ table {
 	border-collapse: collapse;
 }
 // common styles
-.h2 {
+.h1 {
 	font-size: 24px;
 	font-weight: normal;
 	color: #000;
 }
-.h3 {
-	font-size: 14px;
+.h2 {
+	font-size: 18px;
+	font-weight: normal;
 }
 .title {
-	height: 64px;
+	height: 59px;
 	line-height: 64px;
 	text-align: center;
 }
 .container {	
+	width: 980px;
 	max-width: 1900px;
 	margin: 0 auto;
 	padding: 0 20px;
-	@include respond-to(step1) {
-    width: 980px;
-  }
-  @include respond-to(step2) {
-    width: auto;
-  }
   @include respond-to(step3) {
     width: auto;
   }
   @include respond-to(step4) {
     width: auto;
   }
+  @include respond-to(step5) {
+  	width: auto;
+  }
 }
-.container_oh {
+.container_mod {
+	position: relative;
 	overflow: hidden;
 }
 //header
@@ -156,6 +162,9 @@ table {
 		padding: 0 40px;
 		line-height: 50px;
 		font-size: 14px;
+		@include respond-to(step2) {
+			padding: 0 20px;
+		}
 	}
 	a {
 		color: #fff;

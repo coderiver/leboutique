@@ -2,11 +2,12 @@
 
 * { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
 
-body { background: #f1f1f1; font-family: Helvetica, Arial, Tahoma, sans-serif; font-weight: normal; font-size: 12px; }
+body { background: #f4f4f4; font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif; font-weight: normal; font-size: 12px; }
 
 a img, fieldset { border: none; }
 
 a { color: #006699; }
+a:hover { color: #e41f32; }
 
 li { list-style: none; }
 
@@ -16,19 +17,18 @@ button { line-height: 1; cursor: pointer; }
 
 table { border-spacing: 0; border-collapse: collapse; }
 
-.h2 { font-size: 24px; font-weight: normal; color: #000; }
+.h1 { font-size: 24px; font-weight: normal; color: #000; }
 
-.h3 { font-size: 14px; }
+.h2 { font-size: 18px; font-weight: normal; }
 
-.title { height: 64px; line-height: 64px; text-align: center; }
+.title { height: 59px; line-height: 64px; text-align: center; }
 
-.container { max-width: 1900px; margin: 0 auto; padding: 0 20px; }
-@media only screen and (max-width: 980px) { .container { width: 980px; } }
-@media only screen and (max-width: 1220px) { .container { width: auto; } }
+.container { width: 980px; max-width: 1900px; margin: 0 auto; padding: 0 20px; }
 @media only screen and (min-width: 1220px) and (max-width: 1600px) { .container { width: auto; } }
 @media only screen and (min-width: 1600px) and (max-width: 1900px) { .container { width: auto; } }
+@media only screen and (min-width: 1900px) { .container { width: auto; } }
 
-.container_oh { overflow: hidden; }
+.container_mod { position: relative; overflow: hidden; }
 
 .header { background: #f4f4f4; }
 .header .container { position: relative; height: 73px; }
@@ -58,6 +58,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .nav { text-align: center; font-size: 0; }
 .nav li { display: inline-block; height: 50px; padding: 0 40px; line-height: 50px; font-size: 14px; }
+@media only screen and (max-width: 1220px) { .nav li { padding: 0 20px; } }
 .nav a { color: #fff; text-decoration: none; }
 .nav a.active { padding-bottom: 2px; border-bottom: 2px solid #e41f32; }
 
@@ -179,49 +180,50 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .action__desc { height: 85px; padding: 18px 20px; background: #fff; border-bottom: 1px solid #ddd; }
 
-.action__title a { font-size: 18px; color: #006699; }
+.action__title a { font-size: 18px; }
 .action__title p { height: 35px; line-height: 1.3; margin: 7px 0; overflow: hidden; font-size: 14px; }
 
 .action__info { overflow: hidden; }
 
-.action__time { position: relative; padding-left: 18px; font-size: 11px; }
+.action__time { float: left; position: relative; padding-left: 18px; font-size: 11px; }
 .action__time i { position: absolute; top: 0; left: 0; background: url('../img/icons-sc288de24c2.png') 0 -1811px no-repeat; width: 13px; height: 13px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .action__time i { background: url('../img/icons-sc288de24c2.png') 0 -1496px no-repeat; width: 26px; height: 26px; } }
 
 .action__view { float: right; font-size: 11px; }
-.action__view a { margin-right: 3px; color: #006699; text-decoration: underline; }
+.action__view a { margin-right: 3px; text-decoration: underline; }
 .action__view i { font-style: normal; color: #e41f32; }
 
 .banner { height: 125px; margin-bottom: 10px; background: #808080; }
 
 .soon { margin-bottom: 30px; background: #fff; border-bottom: 1px solid #ddd; }
 
-.soon__title { padding: 18px 20px 10px 20px; }
+.soon__title { padding: 16px 20px 9px 20px; }
+.soon__title .h2 { margin-bottom: 2px; }
 
 .soon__list { padding: 0 10px; overflow: hidden; }
-.soon__list ul { position: relative; bottom: -10px; overflow: hidden; }
-.soon__list li { float: left; width: 25%; padding: 8px 10px; box-sizing: border-box; }
+.soon__list ul { position: relative; bottom: -1px; font-size: 0; }
+.soon__list li { display: inline-block; width: 25%; vertical-align: top; }
 @media only screen and (min-width: 1220px) and (max-width: 1600px) { .soon__list li { width: 20%; } }
 @media only screen and (min-width: 1600px) and (max-width: 1900px) { .soon__list li { width: 16.666%; } }
+@media only screen and (min-width: 1900px) { .soon__list li { width: 16.666%; } }
 
-.soon__desc { border-bottom: 1px solid #ddd; }
+.soon__desc { padding: 8px 0; margin: 0 10px; border-bottom: 1px solid #ddd; }
 .soon__desc a { font-size: 14px; font-weight: bold; }
-.soon__desc a:hover { color: #e41f32; }
-.soon__desc a:visited { color: #663366; }
-.soon__desc p { height: 36px; padding: 5px 0 16px 0; }
+.soon__desc p { height: 36px; padding: 5px 0; font-size: 12px; }
 
-.about { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #ddd; }
-.about .h2 { padding: 0 0 10px 20px; }
+.about { margin-bottom: 36px; padding-bottom: 19px; border-bottom: 1px solid #ddd; overflow: hidden; }
+.about .h2 { padding-left: 20px; margin-bottom: -15px; }
 @media only screen and (min-width: 1900px) { .about { display: none; } }
 
-.about__list { padding: 0 10px; overflow: hidden; }
-.about__list li { float: left; width: 33.3333%; padding: 8px 10px; box-sizing: border-box; }
+.about__list { position: relative; bottom: -20px; padding: 0 10px; font-size: 0; }
+.about__list li { display: inline-block; width: 33.3333%; vertical-align: top; }
 @media only screen and (min-width: 1600px) and (max-width: 1900px) { .about__list li { width: 16.6666%; } }
 
-.about__price, .about__prod, .about__return, .about__help, .about__info, .about__conf { position: relative; padding-left: 56px; }
-.about__price i, .about__prod i, .about__return i, .about__help i, .about__info i, .about__conf i { position: absolute; top: 9px; left: 0; }
+.about__price, .about__prod, .about__return, .about__help, .about__info, .about__conf { position: relative; padding: 16px 0 8px 48px; margin: 0 8px; border-bottom: 1px solid #ddd; }
+.about__price i, .about__prod i, .about__return i, .about__help i, .about__info i, .about__conf i { position: absolute; top: 50%; left: 0; margin-top: -18px; }
 .about__price strong, .about__prod strong, .about__return strong, .about__help strong, .about__info strong, .about__conf strong { display: block; margin-bottom: 5px; font-size: 14px; }
-.about__price p, .about__prod p, .about__return p, .about__help p, .about__info p, .about__conf p { padding-bottom: 15px; }
+.about__price p, .about__prod p, .about__return p, .about__help p, .about__info p, .about__conf p { height: 30px; padding-bottom: 15px; font-size: 12px; }
+@media only screen and (min-width: 1600px) and (max-width: 1900px) { .about__price p, .about__prod p, .about__return p, .about__help p, .about__info p, .about__conf p { height: 45px; } }
 
 .about__price i { background: url('../img/icons-sc288de24c2.png') 0 -1095px no-repeat; width: 36px; height: 37px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__price i { background: url('../img/icons-sc288de24c2.png') 0 -240px no-repeat; width: 72px; height: 74px; } }
@@ -241,7 +243,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 .about__conf i { background: url('../img/icons-sc288de24c2.png') 0 -1142px no-repeat; width: 36px; height: 37px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__conf i { background: url('../img/icons-sc288de24c2.png') 0 -492px no-repeat; width: 72px; height: 74px; } }
 
-.clothes { margin-bottom: 20px; padding: 0 20px; }
+.clothes { position: absolute; bottom: 0; left: 20px; right: 20px; margin-bottom: 20px; }
 .clothes li { padding: 18px 0; border-top: 1px solid #ddd; }
 .clothes li:first-child { border: none; }
 .clothes .h2 { margin-bottom: 15px; }
@@ -255,4 +257,4 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .logo a, .copyright li:first-child a { font: 0/0 a; text-shadow: none; color: transparent; }
 
-.lteie8 .nav li { display: inline; zoom: 1; }
+.ie7 .nav li, .ie7 .soon__list li, .ie7 .about__list li { display: inline; zoom: 1; }

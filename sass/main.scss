@@ -99,7 +99,6 @@
 .action__title {
 	a {
 		font-size: 18px;
-		color: $blue;
 	}
 	p {
 		height: 35px;
@@ -113,6 +112,7 @@
 	overflow: hidden;
 }
 .action__time {
+	float: left;
 	position: relative;
 	padding-left: 18px;
 	font-size: 11px;
@@ -129,7 +129,6 @@
 	font-size: 11px;
 	a {
 		margin-right: 3px;
-		color: $blue;
 		text-decoration: underline;
 	}
 	i {
@@ -150,79 +149,86 @@
 	border-bottom: 1px solid #ddd;
 }
 .soon__title {
-	padding: 18px 20px 10px 20px;
+	padding: 16px 20px 9px 20px;
+	.h2 {
+		margin-bottom: 2px;
+	}
 }
 .soon__list {
 	padding: 0 10px;	
 	overflow: hidden;
 	ul {
 		position: relative;
-		bottom: -10px;
-		overflow: hidden;
+		bottom: -1px;
+		font-size: 0;
 	}
 	li {
-		float: left;
-		width: 25%;
-		padding: 8px 10px;
-		box-sizing: border-box;	
+		display: inline-block;
+		width: 25%;		
+		vertical-align: top;
 		@include respond-to(step3) {
-       		width: 20%;
-   		}	
-   		@include respond-to(step4) {
-       		width: 16.666%;
-   		}
+      width: 20%;
+   	}	
+   	@include respond-to(step4) {
+       width: 16.666%;
+   	}
+   	@include respond-to(step5) {
+       width: 16.666%;
+   	}
 	}	
 }
 .soon__desc {
+	padding: 8px 0;
+	margin: 0 10px;
 	border-bottom: 1px solid #ddd;
 	a {
 		font-size: 14px;
 		font-weight: bold;
-		&:hover {
-			color: $red;
-		}
-		&:visited {
-			color: $visit;
-		}
 	}
 	p {
 		height: 36px;
-		padding: 5px 0 16px 0;
+		padding: 5px 0;
+		font-size: 12px;
 	}
 }
 //about
 .about {
-	margin-bottom: 20px;
-	padding-bottom: 15px;
+	margin-bottom: 36px;
+	padding-bottom: 19px;
 	border-bottom: 1px solid #ddd;
+	overflow: hidden;
 	.h2 {
-		padding: 0 0 10px 20px;
+		padding-left: 20px;
+		margin-bottom: -15px;
 	}
 	@include respond-to(step5) {
 		display: none;
 	}
 }
 .about__list {
+	position: relative;
+	bottom: -20px;
 	padding: 0 10px;		
-	overflow: hidden;
+	font-size: 0;
 	li {
-		float: left;
+		display: inline-block;
 		width: 33.3333%;
-		padding: 8px 10px;
-		box-sizing: border-box;	
+		vertical-align: top;
 		@include respond-to(step4) {
-       		width: 16.6666%;
-   		}
+      width: 16.6666%;
+   	}
 	}
 }
 .about__price, .about__prod, .about__return, .about__help, .about__info, .about__conf {
 	position: relative;
-	padding-left: 56px;
-	//border-bottom: 1px solid #ddd;
+	padding: 16px 0 8px 48px;
+	margin: 0 8px;
+	border-bottom: 1px solid #ddd;
 	i {
 		position: absolute;
-		top: 9px;
+		top: 50%;
 		left: 0;
+		margin-top: -18px;
 	}
 	strong {
 		display: block;
@@ -230,7 +236,12 @@
 		font-size: 14px;
 	}
 	p {
+		height: 30px;
 		padding-bottom: 15px;
+		font-size: 12px;
+		@include respond-to(step4) {
+			height: 45px;
+		}
 	}
 }
 .about__price {
@@ -271,8 +282,11 @@
 }
 //clothes
 .clothes {
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	right: 20px;
 	margin-bottom: 20px;
-	padding: 0 20px;
 	li {
 		padding: 18px 0;
 		border-top: 1px solid #ddd;

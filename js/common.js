@@ -18,13 +18,31 @@ function window_width() {
 		$('.action_big').css('width', '50%');
 		$('.action_small, .action_smallest').css('width', '25%');
 	};
+	//for ie
+	if (wnd_width < 1024) {
+		$('.container').css('width', '980px');
+	}
+	else {
+		$('.container').css('width', 'auto');
+	}
 };
+
+//clothes
+function block_down() {
+	var block_el = $(".clothes");
+	var block_height = block_el.height();
+	var block_parent = $(".container_mod");
+	block_parent.css('padding-bottom', block_height);
+}
+
 
 //init functions
 window_width();
+block_down();
 //window resize
 $(window).resize(function () {
 	window_width();
+	block_down();
 });
 
 //profile
@@ -38,5 +56,7 @@ $('.user__mail').click(function() {
 		$(this).next().show();
 	};
 });
+
+
 
 });

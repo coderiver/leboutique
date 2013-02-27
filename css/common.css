@@ -2,11 +2,12 @@
 
 * { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
 
-body { background: #f1f1f1; font-family: Helvetica, Arial, Tahoma, sans-serif; font-weight: normal; font-size: 12px; }
+body { background: #f4f4f4; font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif; font-weight: normal; font-size: 12px; }
 
 a img, fieldset { border: none; }
 
 a { color: #006699; }
+a:hover { color: #e41f32; }
 
 li { list-style: none; }
 
@@ -16,19 +17,18 @@ button { line-height: 1; cursor: pointer; }
 
 table { border-spacing: 0; border-collapse: collapse; }
 
-.h2 { font-size: 24px; font-weight: normal; color: #000; }
+.h1 { font-size: 24px; font-weight: normal; color: #000; }
 
-.h3 { font-size: 14px; }
+.h2 { font-size: 18px; font-weight: normal; }
 
-.title { height: 64px; line-height: 64px; text-align: center; }
+.title { height: 59px; line-height: 64px; text-align: center; }
 
-.container { max-width: 1900px; margin: 0 auto; padding: 0 20px; }
-@media only screen and (max-width: 980px) { .container { width: 980px; } }
-@media only screen and (max-width: 1220px) { .container { width: auto; } }
+.container { width: 980px; max-width: 1900px; margin: 0 auto; padding: 0 20px; }
 @media only screen and (min-width: 1220px) and (max-width: 1600px) { .container { width: auto; } }
 @media only screen and (min-width: 1600px) and (max-width: 1900px) { .container { width: auto; } }
+@media only screen and (min-width: 1900px) { .container { width: auto; } }
 
-.container_oh { overflow: hidden; }
+.container_mod { position: relative; overflow: hidden; }
 
 .header { background: #f4f4f4; }
 .header .container { position: relative; height: 73px; }
@@ -58,6 +58,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .nav { text-align: center; font-size: 0; }
 .nav li { display: inline-block; height: 50px; padding: 0 40px; line-height: 50px; font-size: 14px; }
+@media only screen and (max-width: 1220px) { .nav li { padding: 0 20px; } }
 .nav a { color: #fff; text-decoration: none; }
 .nav a.active { padding-bottom: 2px; border-bottom: 2px solid #e41f32; }
 
