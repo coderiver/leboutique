@@ -154,6 +154,7 @@ table {
 	}
 }
 .nav {
+	padding: 0 190px;
 	text-align: center;
 	font-size: 0;
 	li {
@@ -336,6 +337,13 @@ table {
 			i {
 				background-color: $red;
 				@include box-shadow($red 0 0 15px 2px);
+			}
+		}
+		&:active {
+			color: #fff;
+			i {
+				background-color: #000;
+				@include box-shadow(none);
 			}
 		}
 	}

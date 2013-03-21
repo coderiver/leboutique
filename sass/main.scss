@@ -7,7 +7,7 @@
 }
 .action {
 	float: left;
-	width: 50%;	
+	width: 50%;
 }
 .action__inner {
 	height: 372px;
@@ -17,13 +17,7 @@
 	width: 100%;
 }
 .action_adv {
-	width: 50%;		
-    @include respond-to(step4) {
-       display: none;
-    }
-    @include respond-to(step5) {
-       display: none;
-    }
+	width: 50%;	    
 }
 .action_adv-inner {
 	height: 371px;
@@ -166,16 +160,7 @@
 		display: inline-block;
 		width: 25%;		
 		vertical-align: top;
-		@include respond-to(step3) {
-      width: 20%;
-   	}	
-   	@include respond-to(step4) {
-       width: 16.666%;
-   	}
-   	@include respond-to(step5) {
-       width: 16.666%;
-   	}
-	}	
+	}
 }
 .soon__desc {
 	padding: 8px 0;
@@ -201,9 +186,6 @@
 		padding-left: 20px;
 		margin-bottom: -15px;
 	}
-	@include respond-to(step5) {
-		display: none;
-	}
 }
 .about__list {
 	position: relative;
@@ -214,9 +196,6 @@
 		display: inline-block;
 		width: 33.3333%;
 		vertical-align: top;
-		@include respond-to(step4) {
-      width: 16.6666%;
-   	}
 	}
 }
 .about__price, .about__prod, .about__return, .about__help, .about__info, .about__conf {
@@ -239,9 +218,6 @@
 		height: 30px;
 		padding-bottom: 15px;
 		font-size: 12px;
-		@include respond-to(step4) {
-			height: 45px;
-		}
 	}
 }
 .about__price {

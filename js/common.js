@@ -7,16 +7,29 @@ function window_width() {
 	if (wnd_width >= 980 && wnd_width <= 1220) {
 		$('.action_big').css('width', '100%');
 		$('.action_small, .action_smallest').css('width', '50%');
+		$('.ie7 .action_small, .action_smallest').css('width', '50%');
 		$('.action_adv').css('width', '50%');
+		$('.about__list li').css('width', '33.3%');	
+		$('.about__list p').css('height', '36px');
+		$('.soon__list li').css('width', '25%');
+		$('.action_adv').show();
 	};
 	if (wnd_width > 1220 && wnd_width <= 1600) {
-		$('.action_big').css('width', '66.6666%');
-		$('.action_adv').css('width', '33.3333%');
-		$('.action_small, .action_smallest').css('width', '33.3333%');
+		$('.action_big').css('width', '66.6%');
+		$('.action_adv').css('width', '33.3%');
+		$('.action_small, .action_smallest').css('width', '33.3%');
+		$('.about__list li').css('width', '33.3%');	
+		$('.about__list p').css('height', '36px');
+		$('.soon__list li').css('width', '20%');
+		$('.action_adv').show();
 	};
 	if (wnd_width > 1600) {
 		$('.action_big').css('width', '50%');
 		$('.action_small, .action_smallest').css('width', '25%');
+		$('.about__list li').css('width', '16.6%');	
+		$('.about__list p').css('height', '45px');	
+		$('.soon__list li').css('width', '16.6%');
+		$('.action_adv').hide();
 	};
 	//for ie
 	if (wnd_width < 1024) {

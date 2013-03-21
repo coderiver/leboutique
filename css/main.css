@@ -7,8 +7,6 @@
 .action_big { width: 100%; }
 
 .action_adv { width: 50%; }
-@media only screen and (min-width: 1600px) and (max-width: 1900px) { .action_adv { display: none; } }
-@media only screen and (min-width: 1900px) { .action_adv { display: none; } }
 
 .action_adv-inner { height: 371px; line-height: 353px; margin: 5px; background: gray; border-bottom: 1px solid #ddd; }
 .action_adv-inner span { display: block; text-align: center; font-size: 20px; color: #fff; }
@@ -38,8 +36,8 @@
 .action__info { overflow: hidden; }
 
 .action__time { float: left; position: relative; padding-left: 18px; font-size: 11px; }
-.action__time i { position: absolute; top: 0; left: 0; background: url('../img/icons-sc288de24c2.png') 0 -1811px no-repeat; width: 13px; height: 13px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .action__time i { background: url('../img/icons-sc288de24c2.png') 0 -1496px no-repeat; width: 26px; height: 26px; } }
+.action__time i { position: absolute; top: 0; left: 0; background: url('../img/icons-sc556318848.png') 0 -1793px no-repeat; width: 13px; height: 13px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .action__time i { background: url('../img/icons-sc556318848.png') 0 -1447px no-repeat; width: 26px; height: 26px; } }
 
 .action__view { float: right; font-size: 11px; }
 .action__view a { margin-right: 3px; text-decoration: underline; }
@@ -55,9 +53,6 @@
 .soon__list { padding: 0 10px; overflow: hidden; }
 .soon__list ul { position: relative; bottom: -1px; font-size: 0; }
 .soon__list li { display: inline-block; width: 25%; vertical-align: top; }
-@media only screen and (min-width: 1220px) and (max-width: 1600px) { .soon__list li { width: 20%; } }
-@media only screen and (min-width: 1600px) and (max-width: 1900px) { .soon__list li { width: 16.666%; } }
-@media only screen and (min-width: 1900px) { .soon__list li { width: 16.666%; } }
 
 .soon__desc { padding: 8px 0; margin: 0 10px; border-bottom: 1px solid #ddd; }
 .soon__desc a { font-size: 14px; font-weight: bold; }
@@ -65,35 +60,32 @@
 
 .about { margin-bottom: 36px; padding-bottom: 19px; border-bottom: 1px solid #ddd; overflow: hidden; }
 .about .h2 { padding-left: 20px; margin-bottom: -15px; }
-@media only screen and (min-width: 1900px) { .about { display: none; } }
 
 .about__list { position: relative; bottom: -20px; padding: 0 10px; font-size: 0; }
 .about__list li { display: inline-block; width: 33.3333%; vertical-align: top; }
-@media only screen and (min-width: 1600px) and (max-width: 1900px) { .about__list li { width: 16.6666%; } }
 
 .about__price, .about__prod, .about__return, .about__help, .about__info, .about__conf { position: relative; padding: 16px 0 8px 48px; margin: 0 8px; border-bottom: 1px solid #ddd; }
 .about__price i, .about__prod i, .about__return i, .about__help i, .about__info i, .about__conf i { position: absolute; top: 50%; left: 0; margin-top: -18px; }
 .about__price strong, .about__prod strong, .about__return strong, .about__help strong, .about__info strong, .about__conf strong { display: block; margin-bottom: 5px; font-size: 14px; }
 .about__price p, .about__prod p, .about__return p, .about__help p, .about__info p, .about__conf p { height: 30px; padding-bottom: 15px; font-size: 12px; }
-@media only screen and (min-width: 1600px) and (max-width: 1900px) { .about__price p, .about__prod p, .about__return p, .about__help p, .about__info p, .about__conf p { height: 45px; } }
 
-.about__price i { background: url('../img/icons-sc288de24c2.png') 0 -1095px no-repeat; width: 36px; height: 37px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__price i { background: url('../img/icons-sc288de24c2.png') 0 -240px no-repeat; width: 72px; height: 74px; } }
+.about__price i { background: url('../img/icons-sc556318848.png') 0 -1046px no-repeat; width: 36px; height: 37px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__price i { background: url('../img/icons-sc556318848.png') 0 -240px no-repeat; width: 72px; height: 74px; } }
 
-.about__prod i { background: url('../img/icons-sc288de24c2.png') 0 -1267px no-repeat; width: 36px; height: 37px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__prod i { background: url('../img/icons-sc288de24c2.png') 0 -576px no-repeat; width: 72px; height: 74px; } }
+.about__prod i { background: url('../img/icons-sc556318848.png') 0 -1218px no-repeat; width: 36px; height: 37px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__prod i { background: url('../img/icons-sc556318848.png') 0 -576px no-repeat; width: 72px; height: 74px; } }
 
-.about__return i { background: url('../img/icons-sc288de24c2.png') 0 -1189px no-repeat; width: 36px; height: 37px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__return i { background: url('../img/icons-sc288de24c2.png') 0 -408px no-repeat; width: 72px; height: 74px; } }
+.about__return i { background: url('../img/icons-sc556318848.png') 0 -1140px no-repeat; width: 36px; height: 37px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__return i { background: url('../img/icons-sc556318848.png') 0 -408px no-repeat; width: 72px; height: 74px; } }
 
-.about__help i { background: url('../img/icons-sc288de24c2.png') 0 -901px no-repeat; width: 36px; height: 37px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__help i { background: url('../img/icons-sc288de24c2.png') 0 -156px no-repeat; width: 72px; height: 74px; } }
+.about__help i { background: url('../img/icons-sc556318848.png') 0 -852px no-repeat; width: 36px; height: 37px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__help i { background: url('../img/icons-sc556318848.png') 0 -156px no-repeat; width: 72px; height: 74px; } }
 
-.about__info i { background: url('../img/icons-sc288de24c2.png') 0 -1048px no-repeat; width: 36px; height: 37px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__info i { background: url('../img/icons-sc288de24c2.png') 0 -324px no-repeat; width: 72px; height: 74px; } }
+.about__info i { background: url('../img/icons-sc556318848.png') 0 -999px no-repeat; width: 36px; height: 37px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__info i { background: url('../img/icons-sc556318848.png') 0 -324px no-repeat; width: 72px; height: 74px; } }
 
-.about__conf i { background: url('../img/icons-sc288de24c2.png') 0 -1142px no-repeat; width: 36px; height: 37px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__conf i { background: url('../img/icons-sc288de24c2.png') 0 -492px no-repeat; width: 72px; height: 74px; } }
+.about__conf i { background: url('../img/icons-sc556318848.png') 0 -1093px no-repeat; width: 36px; height: 37px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .about__conf i { background: url('../img/icons-sc556318848.png') 0 -492px no-repeat; width: 72px; height: 74px; } }
 
 .clothes { position: absolute; bottom: 0; left: 20px; right: 20px; margin-bottom: 20px; }
 .clothes li { padding: 18px 0; border-top: 1px solid #ddd; }

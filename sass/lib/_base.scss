@@ -14,9 +14,6 @@
   @else if $media == step4 {
     @media only screen and (min-width: 1600px) and (max-width: 1900px) { @content; }
   }
-  @else if $media == step5 {
-    @media only screen and (min-width: 1900px) { @content; }
-  }
 }
 // retina bg
 @mixin retina {
